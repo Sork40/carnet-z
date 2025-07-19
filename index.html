@@ -2,36 +2,59 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Carnet Z - Dragon Ball Edition</title>
+  <title>Carnet Z - Page 1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleMusic() {
+      const audio = document.getElementById("bg-music");
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  </script>
 </head>
 <body>
-  <div class="container">
-    <h1>🐉 Carnet Z - Journal d'entraînement</h1>
-    <form>
-      <h2>🦾 Musculation</h2>
-      <label>Type de séance : <input type="text" name="muscu_type"></label><br>
-      <label>Nombre d’exos : <input type="number" name="muscu_exo"></label><br>
-      <label>Commentaires :<br><textarea name="muscu_comment"></textarea></label>
-
-      <h2>🏊 Natation</h2>
-      <label>Distance (m) : <input type="number" name="swim_dist"></label><br>
-      <label>Ressenti : <input type="text" name="swim_feel"></label>
-
-      <h2>🍗 Nutrition</h2>
-      <label>Protéines (g) : <input type="number" name="prot"></label><br>
-      <label>Objectif atteint ? <select name="goal">
-        <option value="yes">Oui</option>
-        <option value="no">Non</option>
-      </select></label>
-
-      <h2>⚡ État physique</h2>
-      <label>Fatigue (1-10) : <input type="range" min="1" max="10" name="fatigue"></label><br>
-      <label>Motivation (1-10) : <input type="range" min="1" max="10" name="mood"></label>
-
-      <p><button type="submit">🔥 Valider la journée</button></p>
-    </form>
+  <div class="page">
+    <audio id="bg-music" loop>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    <div class="header">
+      <h1>📘 Carnet Z - Jour 1 : L'Éveil du Guerrier</h1>
+      <button onclick="toggleMusic()">🎵 Musique ON/OFF</button>
+    </div>
+    <div class="content">
+      <div class="section">
+        <h2>🦾 Entraînement : Haut du corps</h2>
+        <ul>
+          <li>Développé couché : 50kg ➝ 40kg (douleur côté gauche)</li>
+          <li>Butterfly machine : 3×10</li>
+          <li>Poulie triceps (corde haute) : 3×10 (5-6kg)</li>
+          <li>Écarté incliné (cross-over) : 3×6-7kg</li>
+          <li>Machine pecs basse : 25 reps à 20kg</li>
+          <li>Biceps haltères debout : 3×10</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>🏊 Natation</h2>
+        <p>50 longueurs de 25m en brasse (soit 1 250m)</p>
+      </div>
+      <div class="section">
+        <h2>🍽️ Nutrition</h2>
+        <ul>
+          <li>Petit-déj : 2 œufs, 1 tranche pain protéiné, 50g saumon</li>
+          <li>Déj : 180g saumon + 1 c. huile olive, tomate, concombre, 110g pâtes, 120g skyr</li>
+          <li>Dîner : salade 200g + 100g crevettes + yaourt grec 150g</li>
+          <li>Soirée : 1 verre de lait + 20g caséine</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>⚡ État physique</h2>
+        <p>Douleur légère pec gauche, séance adaptée. Motivation conservée malgré salle limitée.</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
