@@ -1,39 +1,17 @@
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Carnet Z - Capsule V3</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <script>
-    function toggleMusic() {
-      const audio = document.getElementById("bg-music");
-      if (audio.paused) {
-        audio.play();
-      } else {
-        audio.pause();
-      }
-    }
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carnet Z – Semaine 1</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="header">
-    <h1>🐢 Bienvenue dans le Carnet Z</h1>
-    <h2>Édition Kamé Sennin</h2>
-    <button onclick="toggleMusic()">🎵 Musique ON/OFF</button>
+  <div class="book">
+    <button id="prev">&#8592;</button>
+    <img id="page" src="page_01.png" alt="Carnet Page"/>
+    <button id="next">&#8594;</button>
   </div>
-  <audio id="bg-music" loop>
-    <source src="music.mp3" type="audio/mpeg">
-  </audio>
-  <div class="page">
-    <div class="section">
-      <h3>📅 Jour 1 : L'Éveil du Guerrier</h3>
-      <p><strong>Entraînement :</strong> Développé couché, butterfly, triceps, cross-over, biceps, natation (50x25m)</p>
-      <p><strong>Nutrition :</strong> Petit-déj (œufs, pain, saumon), Déj (saumon, pâtes, légumes, skyr), Dîner (salade, crevettes, yaourt), Caséine + lait</p>
-      <p><strong>État :</strong> Douleur pec gauche, séance adaptée. Bonne motivation.</p>
-    </div>
-    <div class="note">✨ Page 1 sur 30. Navigation multi-page arrive bientôt !</div>
-  </div>
+  <script src="script.js"></script>
 </body>
 </html>
