@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carnet Z</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Carnet Z - Dragon Ball Edition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Bienvenue dans le Carnet Z</h1>
-    <p>Prépare-toi à devenir plus fort chaque jour 💥</p>
+    <h1>🐉 Carnet Z - Journal d'entraînement</h1>
+    <form>
+      <h2>🦾 Musculation</h2>
+      <label>Type de séance : <input type="text" name="muscu_type"></label><br>
+      <label>Nombre d’exos : <input type="number" name="muscu_exo"></label><br>
+      <label>Commentaires :<br><textarea name="muscu_comment"></textarea></label>
+
+      <h2>🏊 Natation</h2>
+      <label>Distance (m) : <input type="number" name="swim_dist"></label><br>
+      <label>Ressenti : <input type="text" name="swim_feel"></label>
+
+      <h2>🍗 Nutrition</h2>
+      <label>Protéines (g) : <input type="number" name="prot"></label><br>
+      <label>Objectif atteint ? <select name="goal">
+        <option value="yes">Oui</option>
+        <option value="no">Non</option>
+      </select></label>
+
+      <h2>⚡ État physique</h2>
+      <label>Fatigue (1-10) : <input type="range" min="1" max="10" name="fatigue"></label><br>
+      <label>Motivation (1-10) : <input type="range" min="1" max="10" name="mood"></label>
+
+      <p><button type="submit">🔥 Valider la journée</button></p>
+    </form>
   </div>
 </body>
 </html>
