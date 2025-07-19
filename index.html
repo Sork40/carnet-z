@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Carnet Z - Page 1</title>
+  <title>Carnet Z - Capsule V3</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
   <script>
@@ -17,44 +18,22 @@
   </script>
 </head>
 <body>
+  <div class="header">
+    <h1>🐢 Bienvenue dans le Carnet Z</h1>
+    <h2>Édition Kamé Sennin</h2>
+    <button onclick="toggleMusic()">🎵 Musique ON/OFF</button>
+  </div>
+  <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
   <div class="page">
-    <audio id="bg-music" loop>
-      <source src="music.mp3" type="audio/mpeg">
-    </audio>
-    <div class="header">
-      <h1>📘 Carnet Z - Jour 1 : L'Éveil du Guerrier</h1>
-      <button onclick="toggleMusic()">🎵 Musique ON/OFF</button>
+    <div class="section">
+      <h3>📅 Jour 1 : L'Éveil du Guerrier</h3>
+      <p><strong>Entraînement :</strong> Développé couché, butterfly, triceps, cross-over, biceps, natation (50x25m)</p>
+      <p><strong>Nutrition :</strong> Petit-déj (œufs, pain, saumon), Déj (saumon, pâtes, légumes, skyr), Dîner (salade, crevettes, yaourt), Caséine + lait</p>
+      <p><strong>État :</strong> Douleur pec gauche, séance adaptée. Bonne motivation.</p>
     </div>
-    <div class="content">
-      <div class="section">
-        <h2>🦾 Entraînement : Haut du corps</h2>
-        <ul>
-          <li>Développé couché : 50kg ➝ 40kg (douleur côté gauche)</li>
-          <li>Butterfly machine : 3×10</li>
-          <li>Poulie triceps (corde haute) : 3×10 (5-6kg)</li>
-          <li>Écarté incliné (cross-over) : 3×6-7kg</li>
-          <li>Machine pecs basse : 25 reps à 20kg</li>
-          <li>Biceps haltères debout : 3×10</li>
-        </ul>
-      </div>
-      <div class="section">
-        <h2>🏊 Natation</h2>
-        <p>50 longueurs de 25m en brasse (soit 1 250m)</p>
-      </div>
-      <div class="section">
-        <h2>🍽️ Nutrition</h2>
-        <ul>
-          <li>Petit-déj : 2 œufs, 1 tranche pain protéiné, 50g saumon</li>
-          <li>Déj : 180g saumon + 1 c. huile olive, tomate, concombre, 110g pâtes, 120g skyr</li>
-          <li>Dîner : salade 200g + 100g crevettes + yaourt grec 150g</li>
-          <li>Soirée : 1 verre de lait + 20g caséine</li>
-        </ul>
-      </div>
-      <div class="section">
-        <h2>⚡ État physique</h2>
-        <p>Douleur légère pec gauche, séance adaptée. Motivation conservée malgré salle limitée.</p>
-      </div>
-    </div>
+    <div class="note">✨ Page 1 sur 30. Navigation multi-page arrive bientôt !</div>
   </div>
 </body>
 </html>
